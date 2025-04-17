@@ -55,6 +55,9 @@ index.html               - Main HTML file
 
 6. Use the theme toggle button to switch between light and dark modes.
 
+## Live Demo
+Check out the live demo of the project here: [Conference Ticket Generator](https://ahmednasser111.github.io/conference-ticket-generator/)
+
 ## Development Setup
 If you want to contribute to the project or make changes locally, follow these steps:
 
