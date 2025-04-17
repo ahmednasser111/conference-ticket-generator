@@ -1,0 +1,146 @@
+@media (max-width: 1024px) {
+  .ticket__name {
+    font-size: 1.4rem;
+  }
+  .ticket__date {
+    font-size: 1.3rem;
+  }
+  .ticket__user-name {
+    font-size: 1.2rem;
+  }
+  .ticket__user-github-username {
+    font-size: 1rem;
+  }
+  .ticket__date {
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .wrapper {
+    background-image: url("../assets/images/background-tablet.png");
+  }
+  .ticket__name {
+    font-size: 1.4rem;
+  }
+  .ticket__number {
+    font-size: 1.75rem;
+  }
+  .ticket__date {
+    font-size: 1.3rem;
+  }
+  .ticket__user-name {
+    font-size: 1.2rem;
+  }
+  .ticket__user-github-username {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 550px) {
+  .ticket__name {
+    font-size: 1.4rem;
+  }
+  .ticket__user {
+    margin-bottom: 2rem;
+  }
+  .ticket__number {
+    font-size: 1.35rem;
+  }
+  .ticket__date {
+    font-size: 0.9rem;
+  }
+  .ticket__user-name {
+    font-size: 1.2rem;
+  }
+  .ticket__user-github-username {
+    font-size: 1rem;
+  }
+  .ticket__user-info {
+    height: 55px;
+  }
+  .ticket__user-image {
+    height: 55px;
+    width: 56px;
+  }
+}
+@media (max-width: 425px) {
+  .wrapper {
+    background-image: url("../assets/images/background-mobile.png");
+  }
+  .ticket__logo img {
+    width: 30px;
+    height: 30px;
+  }
+  .ticket__number {
+    font-size: 1rem;
+  }
+  .ticket__date {
+    font-size: 0.8rem;
+  }
+  .ticket__user {
+    margin-bottom: 1.5rem;
+  }
+  .ticket__user-info {
+    height: 50px;
+  }
+  .ticket__user-image {
+    height: 50px;
+    width: 50px;
+  }
+  .ticket__user-name, .ticket__user-github-username {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 375px) {
+  .ticket__logo img {
+    width: 25px;
+    height: 25px;
+  }
+  .ticket__number {
+    font-size: 0.9rem;
+  }
+  .ticket__date {
+    font-size: 0.7rem;
+  }
+  .ticket__user-info {
+    height: 40px;
+  }
+  .ticket__user-image {
+    height: 40px;
+    width: 40px;
+  }
+  .ticket__user {
+    margin-bottom: 1rem;
+  }
+  .ticket__user-name, .ticket__user-github-username {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 325px) {
+  .ticket__logo img {
+    width: 20px;
+    height: 20px;
+  }
+  .ticket__name {
+    font-size: 1.1rem;
+  }
+  .ticket__date {
+    font-size: 0.6rem;
+  }
+  .ticket__user-info {
+    height: 35px;
+  }
+  .ticket__user-image {
+    height: 35px;
+    width: 35px;
+  }
+  .ticket__user-name, .ticket__user-github-username, .ticket__name {
+    font-size: 0.6rem;
+  }
+  .ticket__user-github-icon {
+    width: 18px;
+    height: 18px;
+  }
+  .ticket__number {
+    font-size: 0.85rem;
+  }
+}

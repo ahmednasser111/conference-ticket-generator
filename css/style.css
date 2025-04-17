@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input {
+  border: none;
+}
+
+@font-face {
+  font-family: "Inconsolata";
+  src: url(../assets/fonts/Inconsolata-VariableFont_wdthwght.ttf);
+}
+:root {
+  --color-neutral-0: hsl(0, 0%, 100%);
+  --color-neutral-300: hsl(252, 6%, 83%);
+  --color-neutral-500: hsl(245, 15%, 58%);
+  --color-neutral-700: hsl(245, 19%, 35%);
+  --color-neutral-900: hsl(248, 70%, 10%);
+  --color-orange-500: hsl(7, 88%, 67%);
+  --color-orange-700: hsl(7, 71%, 60%);
+  --gradient-orange-to-neutral: linear-gradient(to right, hsl(7, 86%, 67%), hsl(0, 0%, 100%));
+  --basicFont: 20px "Inconsolata";
+}
+
+body {
+  font: var(--basicFont);
+}
+
+.wrapper {
+  position: relative;
+  display: grid;
+  flex-direction: column;
+  place-content: center;
+  width: 100%;
+  background-image: url("../assets/images/background-mobile.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: aliceblue;
+  overflow: hidden;
+}
+
+.svg-image {
+  position: absolute;
+}
+.svg-image img {
+  width: 100%;
+}
+.svg-image:nth-child(1) {
+  width: 100%;
+}
+.svg-image:nth-child(2) {
+  top: 100px;
+  right: 0;
+}
+.svg-image:nth-child(3) {
+  left: 0;
+  bottom: 0;
+}
+.svg-image:nth-child(4) {
+  top: -100px;
+  left: 100px;
+}
+.svg-image:nth-child(5) {
+  top: 50%;
+  right: 350px;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 900px;
+  padding: 20px 10px;
+}
+
+.btn {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.1s ease-out;
+}
+.btn:hover {
+  background-color: var(--color-orange-500);
+  cursor: pointer;
+}
+
+.image-actions {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.image-actions button {
+  color: var(--color-neutral-300);
+  font-weight: 100;
+  border: 2px solid var(--color-neutral-700);
+  background: rgba(135, 132, 164, 0.4);
+}
+.image-actions button:hover {
+  background: rgba(135, 132, 164, 0.55);
+}
+
+.subtitle {
+  display: flex;
+  align-items: center;
+  font-weight: 200;
+  font-size: 0.75rem;
+  margin-top: 0.85rem;
+}
+.subtitle img {
+  margin-right: 0.45rem;
+}
+
+.error {
+  color: red;
+  display: none;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header__logo {
+  width: auto;
+}
+.header__text {
+  display: inline-block;
+  text-align: center;
+  color: var(--color-neutral-0);
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-top: 2rem;
+}
+.header__text--gradient {
+  background: var(--gradient-orange-to-neutral);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.header__text--email {
+  text-align: center;
+  color: var(--color-orange-700);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.header__text--subtitle {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-neutral-500);
+  margin-top: 1.5rem;
+  line-height: 1;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.uploader {
+  margin-top: 2.7rem;
+}
+.uploader__box {
+  padding: 1.5rem;
+  border-radius: 15px;
+  border: 2px dotted var(--color-neutral-700);
+  background: rgba(75, 72, 106, 0.25);
+}
+.uploader__box--label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+  color: var(--color-neutral-300);
+}
+.uploader__box--label span {
+  display: block;
+  font-size: 1.1rem;
+  text-align: center;
+}
+.uploader__box--label img {
+  width: 55px;
+  height: 55px;
+  background: rgba(75, 72, 106, 0.35);
+  outline: 1px solid rgba(135, 132, 164, 0.4);
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.25s ease-in;
+}
+.uploader__box--label img:hover {
+  background: rgba(75, 72, 106, 0.55);
+  outline: 1px solid rgba(135, 132, 164, 0.55);
+  transition: all 0.25s ease-in;
+}
+.uploader__box--input {
+  display: none;
+}
+.uploader__title {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.uploader__subtitle {
+  font-weight: 300;
+  color: var(--color-neutral-0);
+}
+
+.form-contacts {
+  margin: 1.7rem 0;
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  margin-top: 1.2rem;
+}
+.contact-box__label {
+  font-weight: 400;
+  margin: 0.5rem 0;
+}
+.contact-box__input {
+  color: var(--color-neutral-300);
+  border-radius: 10px;
+  padding: 15px;
+  background: rgba(75, 72, 106, 0.25);
+  outline: 1px solid rgba(135, 132, 164, 0.4);
+}
+.contact-box__input:focus {
+  border: 1.35px solid rgba(135, 132, 164, 0.4);
+}
+
+.generate-btn {
+  background-color: var(--color-orange-700);
+  font-size: 0.9rem;
+  font-weight: 700;
+  width: 100%;
+  padding: 15px;
+  color: #25252b;
+  border-radius: 10px;
+}
+.generate-btn:active {
+  transform: scale(1.03);
+}
+
+.display-data {
+  display: none;
+  padding: 1rem;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.ticket {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  background-color: var(--color-neutral-900);
+  background-image: url("../assets/images/pattern-ticket.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  aspect-ratio: 16/9;
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  position: relative;
+  border-radius: 0.5rem;
+}
+.ticket__logo {
+  margin-bottom: 0.5rem;
+  font-size: 2.75rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.ticket__name {
+  font-size: 2rem;
+}
+.ticket__date {
+  color: var(--color-neutral-300);
+  padding-left: 3.5rem;
+}
+.ticket__user {
+  position: relative;
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+  gap: 0.8rem;
+  margin-bottom: 2.5rem;
+}
+.ticket__user img {
+  border-radius: 0.75rem;
+}
+.ticket__user-image {
+  width: 100px;
+  height: 100px;
+}
+.ticket__user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70px;
+}
+.ticket__user-name {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.ticket__user-github {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.ticket__user-github-icon {
+  width: 20px;
+}
+.ticket__user-github-username {
+  color: var(--color-neutral-300);
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+.ticket__number {
+  color: var(--color-neutral-300);
+  font-size: 2.2rem;
+  position: absolute;
+  right: 5px;
+  top: 38%;
+  transform: rotate(90deg);
+}
+
+.attribution {
+  padding: 10px;
+  font-size: 1.15rem;
+  z-index: 20;
+}
